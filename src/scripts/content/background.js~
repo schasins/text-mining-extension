@@ -1,2 +1,0 @@
-console.log("injecting content script");
-chrome.tabs.executeScript(null, {file: "scripts/content/content_script.js"});
