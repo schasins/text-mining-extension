@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Text Mining Intro</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+    </style>
+  <script src="scripts/intro/intro.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
