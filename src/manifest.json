@@ -9,8 +9,19 @@
     "default_icon": "icons/icon.png",
     "default_popup": "pages/intro.html"
   },
+  "web_accessible_resources": ["scripts/lib/jquery.js", "scripts/content/classifier.js", "scripts/lib/jquery-2.0.3.min.map", "data/classifierData.json"],
+  "background" : {
+    "scripts": ["scripts/lib/jquery.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["scripts/lib/jquery.js", "scripts/content/classifier.js", "scripts/content/content_script.js"]
+    }
+  ],
   "permissions": [
     "tabs",
+    "\u003Call_urls\u003E",
     "http://*/*",
     "https://*/*"
   ]
