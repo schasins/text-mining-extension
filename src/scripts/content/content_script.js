@@ -3,8 +3,11 @@ document.addEventListener('click', textMining, true);
 var bayes;
 
 bayes = new classifier.Bayesian();
-bayes.backend.catCounts = JSON.cats;
-bayes.backend.wordCounts = JSON.words;
+
+console.log(json.cats);
+
+bayes.backend.catCounts = json.cats;
+bayes.backend.wordCounts = json.words;
 
 function textMining(eventData){
   var target = eventData.target;
