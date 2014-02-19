@@ -9,14 +9,14 @@
     "default_icon": "icons/icon.png",
     "default_popup": "pages/intro.html"
   },
-  "web_accessible_resources": ["scripts/lib/jquery.js", "scripts/content/classifier.js", "scripts/lib/jquery-2.0.3.min.map"],
+  "web_accessible_resources": ["scripts/lib/jquery-1.10.2.min.js", "scripts/content/classifier.js", "scripts/lib/jquery-2.0.3.min.map"],
   "background" : {
     "scripts": ["scripts/lib/jquery.js"]
   },
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["scripts/content/classifier.js", "scripts/lib/jquery.js", "scripts/content/model.js", "scripts/content/content_script.js"]
+      "js": ["scripts/content/classifier.js", "scripts/lib/jquery-1.10.2.min.js", "scripts/content/model.js", "scripts/content/content_script.js"]
     }
   ],
   "permissions": [
